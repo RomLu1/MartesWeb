@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+        .body {
+            background-color: aquamarine;
+        }
+
+        .form{
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+          label {
+            /* separa, centra y acomoda los labels */
+            display: block;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Complete con sus datos el siguiente formulario para conocerlo mejor.</h2>
+    <form action="">
+
+        <div>
+            <label for="Nombre">Nombre</label>
+            <input type="text">
+        </div>
+
+        <div>
+            <label for="Apellido">Apellido</label>
+            <input type="text">
+        </div>
+
+        <div> <label for="Edad">Edad</label>
+            <input type="text">
+        </div>
+
+        </div>
+        <div>
+            <label for="Sexo">Sexo</label>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li>
+                    <input type="radio" name="Sexo" value="Hombre">
+                    <label>Hombre</label>
+                </li>
+            </ul>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li>
+                    <input type="radio" name="Sexo" value="Mujer">
+                    <label>Mujer</label>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <label for="Titulo">Titulo</label>
+            <select name="titulo">
+                <option value="Primario">Primario</option>
+                <option value="Secundario">Secundario</option>
+                <option value="Terciario">Terciario</option>
+                <option value="Universitario">Universitario</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Borrar"/>
+        </div>
+    </form>
+</body>
+
+</html>
