@@ -1,0 +1,83 @@
+h1{
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    background-color: lightpink;
+    width: 100%; 
+}
+
+.TextosCentrados {
+    text-align: center;
+    margin-top:75px;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Caja{
+background-color: lightpink;
+display: flex;
+display: inline-flex;
+justify-content: center;
+width: 100%;
+border-radius: 10px;
+
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    
+}
+
+.column-right{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    
+}
+
+.item{
+	background-color:lightblue;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	font-size: 30px;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    padding: 10px;
+}
+
+.textoImagen{
+    max-width: 100% ;
+    text-wrap: balance;
+}
+
+.background-grid {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: 
+        linear-gradient(to right, #f0f0f0 1px, transparent 1px), 
+        linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 6rem 4rem;
+}
+
+.background-radial {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: radial-gradient(circle 500px at 50% 200px, #C9EBFF, transparent);
+}
