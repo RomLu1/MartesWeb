@@ -10,7 +10,7 @@
 <body>
     <script>
         const distancia = prompt('Ingrese la distancia a recorrer:', '');
-        if (distancia <= 1000) {
+        if (distancia > 0 && distancia <= 1000) {
             console.log(`Hola, tus distancia es de ${distancia}, asi que el transporte más apropiado es a pie`)
             document.write(`Hola, tus distancia es de ${distancia}, asi que el transporte más apropiado es a pie`)
         } else if (distancia > 1000 && distancia < 10000) {
