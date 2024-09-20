@@ -25,3 +25,11 @@
     font-weight: 400;
     font-style:normal;
 }
+
+@media (max-width: 600px) {
+    /* Ajustes para pantallas pequeñas */
+    .mi-clase {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
