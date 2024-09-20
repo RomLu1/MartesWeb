@@ -1,0 +1,27 @@
+.margen {
+    margin-top: 50px;
+}
+
+.body {
+    background-color: lightgreen;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.FuenteTitulo {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.FontSubTitulo {
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style:normal;
+}
