@@ -1,0 +1,32 @@
+.margen{
+    margin: 20px;
+}
+.fontTitulo {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.fontSub {
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .btn.botones {
+    background: dimgray;
+    margin-right: 10px;
+    border: none;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.custom-size {
+    max-width: 800px; /* Ancho reducido */
+    max-height: 300px; /* Alto reducido */
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  .footer{
+    background-color: darkgrey;
+  }
