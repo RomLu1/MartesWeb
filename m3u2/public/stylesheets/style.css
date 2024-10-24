@@ -1,8 +1,56 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.margen {
+  margin-top: 50px;
 }
 
-a {
-  color: #00B7FF;
+.body {
+  background-color: rgb(212, 209, 212);
+}
+.custom-navbar {
+  background-color: lightgreen; /* Cambiar a lightcoral */
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.novedades{
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+.novedades li{
+  margin: 4px 0;
+}
+.novedades li a{
+  background-color: #fff;
+  display: block;
+  font-size: 1.2 rem;
+  text-decoration: none;
+  color: #a0a0a0;
+  transition: all .2s ease-in-out;
+}
+.novedades li a:hover{
+  color: #212529;
+  background-color: #dadada;
+}
+.novedades li a img{
+  width: 120px;
+  height: 50px;
+  transition: all .2s ease-in-out;
+  margin-right: 1rem;
+  opacity: 0.7;;
+}
+.novedades li a:hover img {
+margin-right: 1.4rem;
+opacity: 1;
+}
+.mapa iframe{
+  width: 100%;
+  aspect-ratio: 1.2;
+
+}
+.image-container {
+  padding-left: 300px; /* Mueve la imagen más a la derecha */
 }
