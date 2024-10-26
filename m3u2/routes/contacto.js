@@ -3,12 +3,12 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 
 /* GET home page. */
-router.get('/contacto', function(req, res, next) {
-  res.send('contacto');
+router.get('/', function(req, res, next) {
+  res.render('contacto');
 });
-router.post('/contacto', async(req, res, next) => {
+router.post('/', async(req, res, next) => {
 var nombre = req.body.nombre;
-var apellido = req.body.apellido;
+// var apellido = req.body.apellido;
 var email = req.body.email;
 var telefono = req.body.telefono;  
 console.log(req.body)
