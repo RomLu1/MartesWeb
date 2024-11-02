@@ -6,7 +6,7 @@
   background-color: rgb(212, 209, 212);
 }
 .custom-navbar {
-  background-color: lightgreen; /* Cambiar a lightcoral */
+  background-color: rgb(68, 90, 68);
 }
 .card {
   display: flex;
@@ -28,19 +28,18 @@
   display: block;
   font-size: 1.2 rem;
   text-decoration: none;
-  color: #a0a0a0;
+  color: #000000;
   transition: all .2s ease-in-out;
 }
 .novedades li a:hover{
   color: #212529;
-  background-color: #dadada;
+  background-color: #94c292;
 }
 .novedades li a img{
-  width: 120px;
+  width: 50px;
   height: 50px;
   transition: all .2s ease-in-out;
   margin-right: 1rem;
-  opacity: 0.7;;
 }
 .novedades li a:hover img {
 margin-right: 1.4rem;
@@ -53,4 +52,20 @@ opacity: 1;
 }
 .image-container {
   padding-left: 300px; /* Mueve la imagen más a la derecha */
+}
+
+.boton{
+  background-color: #23412a;
+  border: #23412a;
+}
+/* FONTS */
+.tituloFont {
+  font-family: "Patrick Hand SC", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.FontSub {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
 }

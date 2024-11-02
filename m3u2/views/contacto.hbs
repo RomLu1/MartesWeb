@@ -1,17 +1,17 @@
 <div class="container">
     <div>
-        <h2 style="text-align: center;"> Contactame!</h2>
-        <form class="row g-3 needs-validation" action="/contacto" method="POST">
+        <h2 style="text-align: center; margin-top: 20px;" class="FontSub"> Contactanos!</h2>
+        <form class="row g-3 needs-validation" action="/contacto" method="POST" style="margin-top: 20px;">
             <div class="col-md-6">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
                 <div class="valid-feedback">Bien!</div>
             </div>
-            {{!-- <div class="col-md-6">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="apellido" name="apellido"required>
+            <div class="col-md-6">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <input type="text" class="form-control" id="mensaje" name="mensaje"required>
                 <div class="valid-feedback">Bien!</div>
-            </div> --}}
+            </div>
             <div class="col-md-6">
                 <label for="email" class="form-label">Mail</label>
                 <input type="email" class="form-control" id="email" name="email" required>
@@ -23,7 +23,7 @@
                 <div class="invalid-feedback">Por favor ingrese un numero de celular</div>
             </div>
             <div class="col-12">
-                <button class="btn btn-primary" type="submit">Enviar</button>
+                <button class="btn btn-primary boton" style="margin-bottom: 200px;" type="submit">Enviar</button>
             </div>
         </form>
         {{message}}
