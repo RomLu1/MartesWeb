@@ -5,9 +5,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 require('dotenv').config();
+var session = require('express-session');
 var pool = require('./models/bd')
 var indexRouter = require('./routes/index');
 var contactoRouter = require('./routes/contacto');
+var loginRouter = require ('./routes/admin/login');
+var adminRouter = require('./routes/admin/novedades');
 var app = express();
 
 // view engine setup
@@ -20,27 +23,29 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  secret: '12l32s1584sc5sdfcdc2',
+  resave: false,
+  saveUninitialized:true
+}))
+//paginas privadas
+secured = async(req, res,next)=>{
+  try{
+    console.log(req.session.id_usuario); //si esta registrado pasa
+    if(req.session.id_usuario){
+      next();
+    }else{ //si no esta registrado no pasa
+      res.redirect('/admin/login')
+    }
+  }catch(error){
+    console.log(error);
+  }
+}
+
 app.use('/', indexRouter);
 app.use('/contacto', contactoRouter);
-
-// CONSULTAS
-// Select
-// pool.query('select * from empleados').then(function (resultados){
-//   console.log(resultados)
-// });
-
-// INSERT
-
-// var obj = {
-//   nombre: 'Juan',
-//   apellido: 'Perez',
-//   trabajo: 'Seguridad',
-//   salario: '500000',
-//   mail: 'JuanP@gmail.com'
-// }
-// pool.query("insert into empleados set ?", [obj]).then(function (resultados) {
-//   console.log(resultados)
-// });
+app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', secured,  adminRouter);
 
 
 // catch 404 and forward to error handler
