@@ -28,6 +28,8 @@ app.use(session({
   resave: false,
   saveUninitialized:true
 }))
+
+
 //paginas privadas
 secured = async(req, res,next)=>{
   try{
@@ -46,6 +48,11 @@ app.use('/', indexRouter);
 app.use('/contacto', contactoRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured,  adminRouter);
+
+
+pool.query("select * from login"). then(function(resultados){
+  console.log(resultados);
+});
 
 
 // catch 404 and forward to error handler
