@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var novedadesModels = require('../models/novedadesModel');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

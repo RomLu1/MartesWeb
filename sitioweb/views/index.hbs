@@ -38,14 +38,42 @@
 <div class="container">
     <div class="row my-3">
         <div id="novedades" class="col-md-6">
-            <h3 class="FontSub">Los más pedidos</h3>
+            <h3 class="FontSub">Novedades</h3>
             <ul class="novedades FontSub">
-                <li><a href=""><img src="images/LogoBar.png">Baileys Frozzen</a></li>
-                <li><a href=""><img src="images/LogoBar.png">Daikiri de Frutos Rojos</a></li>
-                <li><a href=""><img src="images/LogoBar.png">Sex on the Beach</a></li>
-                <li><a href=""><img src="images/LogoBar.png">Gin Tonic</a></li>
+                {{#each novedades}}
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal{{id}}">
+                        <img src="images/LogoBar.png">{{titulo}}</a>
+                </li>
+                {{/each}}
+
             </ul>
         </div>
+
+
+
+        <!-- Modal -->
+        {{#each novedades}}
+        <div class="modal fade" id="exampleModal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 " id="exampleModalLabel">{{titulo}}</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 >{{subtitulo}}</h5>
+                        <p>{{cuerpo}}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary botonessub fontsub"
+                            data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+
         <div class="col-md-6" style="margin-top: 20px;">
             <div class="container">
                 <div>
