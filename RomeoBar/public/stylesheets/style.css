@@ -1,0 +1,75 @@
+.margen {
+  margin-top: 50px;
+}
+
+.body {
+  background-color: rgb(212, 209, 212);
+}
+.custom-navbar {
+  background-color: rgb(68, 90, 68);
+
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.botonessub{
+  border-color:#527a5c; 
+  background-color: #527a5c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.novedades{
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+.novedades li{
+  margin: 4px 0;
+}
+.novedades li a{
+  background-color: #fff;
+  display: block;
+  font-size: 1.2 rem;
+  text-decoration: none;
+  color: #000000;
+  transition: all .2s ease-in-out;
+}
+.novedades li a:hover{
+  color: #212529;
+  background-color: #94c292;
+}
+.novedades li a img{
+  width: 50px;
+  height: 50px;
+  transition: all .2s ease-in-out;
+  margin-right: 1rem;
+}
+.novedades li a:hover img {
+margin-right: 1.4rem;
+opacity: 1;
+}
+.mapa iframe{
+  width: 100%;
+  aspect-ratio: 1.2;
+
+}
+.image-container {
+  padding-left: 300px; /* Mueve la imagen más a la derecha */
+}
+
+
+/* FONTS */
+.tituloFont {
+  font-family: "Patrick Hand SC", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.FontSub {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
