@@ -27,6 +27,7 @@ app.use(session({
   secret: '12l32s1584sc5sdfcdc2',
   resave: false,
   saveUninitialized:true
+  
 }))
 
 

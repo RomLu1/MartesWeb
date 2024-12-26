@@ -16,17 +16,17 @@
                 <form action="/admin/login" method="post">
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label for="usuario" class="tituloFont " style="font-size: 25px;">Usuario</label>
+                            <label for="usuario" class="FontSub " style="font-size: 25px;">Usuario</label>
                             <input type="text" class="form-control" id="usuario" aria-describedby="emailHelp"
                                 name="usuario">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="password"  class="tituloFont " style="font-size: 25px;">Contraseña</label>
+                            <label for="password"  class="FontSub " style="font-size: 25px;">Contraseña</label>
                             <input type="password" class="form-control" id="password" name="password">
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary botonessub fontsub" >Ingresar</button>
+                    <button type="submit" class="btn btn-primary botonessub FontSub"  style="margin-bottom: 150px;">Ingresar</button>
                 </form>
                 {{#if error}}
                 <p>Usuario o contraseña incorrectos</p>
